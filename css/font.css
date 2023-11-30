@@ -1,0 +1,68 @@
+@font-face{
+    font-family: 'Libre Baskerville';
+    font-display: swap;
+    src: url('../font/LibreBaskerville-Regular.ttf') format("truetype");
+}
+
+@font-face{
+    font-family: 'Mulish';
+    font-display: swap;
+    src: url('../font/Mulish-Light.ttf') format("truetype");
+}
+
+@font-face{
+    font-family: 'Josefin Sans';
+    font-display: swap;
+    src: url('../font/JosefinSans-Regular.ttf') format("truetype");
+}
+
+@font-face{
+    font-family: 'NeueHaasDisplayRoman';
+    font-display: swap;
+    src: url('../font/NeueHaasDisplayRoman.ttf') format("truetype");
+}
+
+
+@font-face{
+    font-family: 'Roboto Regular';
+    font-display: swap;
+    src: url('../font/Roboto-Regular.ttf') format("truetype");
+}
+
+@font-face{
+    font-family: 'Roboto Thin';
+    font-display: swap;
+    src: url('../font/Roboto-Thin.ttf') format("truetype");
+}
+
+@font-face{
+    font-family: 'NotoSansJP Light';
+    font-display: swap;
+    src: url('../font/NotoSansJP-Light.ttf') format("truetype");
+}
+
+@font-face{
+    font-family: 'NotoSansJP Regular';
+    font-display: swap;
+    src: url('../font/NotoSansJP-Regular.ttf') format("truetype");
+}
+
+
+@font-face{
+    font-family: 'Wix Madefor Text';
+    font-display: swap;
+    src: url('../font/WixMadeforText-VariableFont_wght.ttf') format("truetype");
+}
+
+@font-face{
+    font-family: 'Wix Madefor Display';
+    font-display: swap;
+    src: url('../font/WixMadeforDisplay-VariableFont_wght.ttf') format("truetype");
+}
+
+
+
+
+/* h1 {
+    font-family: 'Libre Baskerville';
+} */
