@@ -101,6 +101,10 @@ body{
     font-style: normal;
 }
 
+#posts-chart > div:nth-child(1) > canvas{
+    font-family:'Wix Madefor Text' ;
+
+}
 
 
 /* 進度條 */
