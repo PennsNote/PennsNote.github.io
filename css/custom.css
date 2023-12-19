@@ -60,12 +60,12 @@
 /* 透明度修改 */
 /* 首页文章卡片 */
 #recent-posts > .recent-post-item {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 /* 首页侧栏卡片 */
 .card-widget {
-    background: rgba(255, 255, 255, 0.8) !important;
+    background: rgba(255, 255, 255, 0.9) !important;
     border-radius: 500px;
 }
 
@@ -143,5 +143,23 @@ body{
     font-size: 3rem;
     line-height: 1;
     text-align: right;
-    color: rgba(199, 199, 199, 0.667)
+    color: rgba(111, 103, 94, 0.667)
   }
+
+/* 導航欄 */
+/* #nav *::after{
+    background-color: transparent!important;
+} */
+
+
+#nav .menus_item:hover,
+#nav #search-button:hover{
+    font-size: 20px;
+}
+
+#nav .menus_items {
+    position: absolute;
+    /* width: fit-content; */
+    left: 50%;
+    transform: translateX(-50%);
+}
