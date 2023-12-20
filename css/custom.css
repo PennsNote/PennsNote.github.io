@@ -1,165 +1,149 @@
-/* 文章页H1-H6图标样式效果 */
-/*h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
-    -webkit-animation: ccc 1.6s linear infinite ;
-    animation: ccc 1.6s linear infinite ;
-}
-@-webkit-keyframes ccc {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-    to {
-        -webkit-transform: rotate(-1turn);
-        transform: rotate(-1turn)
-    }
-}
-@keyframes ccc {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-    to {
-        -webkit-transform: rotate(-1turn);
-        transform: rotate(-1turn)
-    }
-}*/
 
-
-
-
-/* 页脚透明
-#footer {
-    background: transparent !important;
-} */
-
-
-
-
-
-/* 滚动条 */
-/* ::-webkit-scrollbar {
-    width: 5px;
-    height: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #e58a8a;
-    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0.4) 75%, transparent 75%, transparent);
-    border-radius: 2em;
-}
-
-::-webkit-scrollbar-corner {
-    background-color: transparent;
-}
-
-::-moz-selection {
-    color: #fff;
-    background-color: #e58a8a;
-} */
 
 /* 透明度修改 */
 /* 首页文章卡片 */
-#recent-posts > .recent-post-item {
+/* #recent-posts > .recent-post-item {
     background: rgba(255, 255, 255, 0.9);
 }
 
 /* 首页侧栏卡片 */
-.card-widget {
+/* .card-widget {
     background: rgba(255, 255, 255, 0.9) !important;
     border-radius: 500px;
-}
+} */ 
+
+
 
 
 /* 搜索框圆角 */
-/* .search-dialog {
-    border-radius: 50px;
-    background-color: rgba(254, 254, 254, 0.593);
+/* ----------------------------------------------------- */
+
+.search-dialog {
+    border-radius: 40px;
+    background-color: rgba(254, 254, 254, 0.9);
     width: 1000px;
-} */
-
-/* 站点 title */
-/* h1#site-title {
-    font-family:'Roboto Regular' ;
-} */
-
-#site-title {
-    font-family:'Wix Madefor Display' ;
-    font-weight: 700;
-    font-size: 32px;
+    padding: 30px;
 }
 
-div#menus {
-    font-family:'Wix Madefor Text' ;
-    font-size: 18px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 24px;
-}
-
-body{
-    font-family:'Wix Madefor Text' ;
-    font-style: normal;
-}
-
-#posts-chart > div:nth-child(1) > canvas{
-    font-family:'Wix Madefor Text' ;
-
-}
 
 
 /* 進度條 */
+/* ----------------------------------------------------- */
 .pace {
-    -webkit-pointer-events: none;
-    pointer-events: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-  
+	-webkit-pointer-events: none;
+	pointer-events: none;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+
+	-webkit-perspective: 12rem;
+	-moz-perspective: 12rem;
+	-ms-perspective: 12rem;
+	-o-perspective: 12rem;
+	perspective: 12rem;
+
+	z-index: 10000;
+	position: fixed;
+	height: 5rem;
+	width: 5rem;
+	margin: auto;
+	top: 10%;
+	right: 1%;
+}
+
 .pace.pace-inactive .pace-progress {
-    display: none;
-  }
-  
+	display: none;
+}
+
 .pace .pace-progress {
-    position: fixed;
-    z-index: 100;
-    top: 10%;
-    right: 1%;
-    height: 5rem;
-    width: 5rem;
-    -webkit-transform: translate3d(0, 0, 0) !important;
-    -ms-transform: translate3d(0, 0, 0) !important;
-    transform: translate3d(0, 0, 0) !important;
-  }
-  
+	position: fixed;
+	z-index: 2000;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 5rem;
+	width: 5rem !important;
+	line-height: 5rem;
+	font-size: 2rem;
+	border-radius: 50%;
+	background: rgba(109, 122, 128, 0.6);
+	color: #fff;
+	font-family: "Helvetica Neue", sans-serif;
+	font-weight: 100;
+	text-align: center;
+
+	-webkit-animation: pace-theme-center-circle-spin linear infinite 2s;
+	-moz-animation: pace-theme-center-circle-spin linear infinite 2s;
+	-ms-animation: pace-theme-center-circle-spin linear infinite 2s;
+	-o-animation: pace-theme-center-circle-spin linear infinite 2s;
+	animation: pace-theme-center-circle-spin linear infinite 2s;
+
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
 .pace .pace-progress:after {
-    display: block;
-    position: absolute;
-    top: 10%;
-    right: 1%;
-    content: attr(data-progress-text);
-    font-family: "Helvetica Neue", sans-serif;
-    font-weight: 100;
-    font-size: 3rem;
-    line-height: 1;
-    text-align: right;
-    color: rgba(111, 103, 94, 0.667)
-  }
+	content: attr(data-progress-text);
+	display: block;
+}
+
+@-webkit-keyframes pace-theme-center-circle-spin {
+	from { -webkit-transform: rotateY(0deg) }
+	to { -webkit-transform: rotateY(360deg) }
+}
+
+@-moz-keyframes pace-theme-center-circle-spin {
+	from { -moz-transform: rotateY(0deg) }
+	to { -moz-transform: rotateY(360deg) }
+}
+
+@-ms-keyframes pace-theme-center-circle-spin {
+	from { -ms-transform: rotateY(0deg) }
+	to { -ms-transform: rotateY(360deg) }
+}
+
+@-o-keyframes pace-theme-center-circle-spin {
+	from { -o-transform: rotateY(0deg) }
+	to { -o-transform: rotateY(360deg) }
+}
+
+@keyframes pace-theme-center-circle-spin {
+	from { transform: rotateY(0deg) }
+	to { transform: rotateY(360deg) }
+}
+
+
 
 /* 導航欄 */
-/* #nav *::after{
-    background-color: transparent!important;
-} */
-
+/* ----------------------------------------------------- */
 
 #nav .menus_item:hover,
 #nav #search-button:hover{
     font-size: 20px;
 }
 
+/*選單置中*/
 #nav .menus_items {
     position: absolute;
-    /* width: fit-content; */
+    width: fit-content;
     left: 50%;
     transform: translateX(-50%);
 }
+
+/* #swiper_container{
+    height: 150px;
+}
+
+#swiper_container > div.blog-slider__wrp.swiper-wrapper{
+    height: 150px;
+}
+
+#swiper_container > div.blog-slider__wrp.swiper-wrapper > div.blog-slider__item.swiper-slide.swiper-slide-duplicate.swiper-slide-next.swiper-slide-duplicate-prev > a > img{
+    width: auto;
+    height: 150px;
+} */

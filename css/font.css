@@ -63,6 +63,28 @@
 
 
 
-/* h1 {
-    font-family: 'Libre Baskerville';
+/* 網頁字體設定 */
+/* #site-title {
+    font-family:'Wix Madefor Display' ;
+    font-weight: 700;
+    font-size: 32px;
 } */
+
+/*選單字體*/
+div#menus {
+    font-family:'Wix Madefor Text' ;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+}
+
+body{
+    font-family:'Wix Madefor Text' ;
+    font-style: normal;
+}
+
+/* #posts-chart > div:nth-child(1) > canvas{
+    font-family:'Wix Madefor Text' ;
+} */
+
